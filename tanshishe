@@ -1,0 +1,27 @@
+case 1:
+		system("cls");
+		// 初始化 
+		printGame();
+		printSnake();
+		printFood();
+		break;
+	case 2:
+		system("cls");
+		printTips();
+		break;
+	case 3:
+		system("cls");
+		gotoxy(30, 10);
+		color(11);
+		printf("Bye!");
+		exit(0);
+	default:
+		system("cls");
+		printf("没有此序号,请输入1,2或3\n");
+		Sleep(2000);
+		system("cls");
+	}
+	return yourchoice;
+}
+int color(int c)
+{
